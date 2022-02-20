@@ -1,0 +1,11 @@
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+header a.active{
+  background-color: #1f2937;
+  color: white;
+}
