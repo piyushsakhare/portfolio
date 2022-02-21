@@ -12,7 +12,7 @@ import useDarkMode from './hooks/useDarkMode'
 function App() {
   useDarkMode();
   return (
-    <div className="poppins ">
+    <div className="poppins dark:bg-gray-900 dark:text-white">
       <BrowserRouter>
       <ScrollToTop />
           <Nav />

@@ -9,3 +9,9 @@ header a.active{
   background-color: #1f2937;
   color: white;
 }
+
+.dark header a.active{
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
