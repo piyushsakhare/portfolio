@@ -2,8 +2,28 @@ import React from 'react';
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 
+
+
 function Contact(){
- 
+
+    function changeImage(){
+        if(document.getElementById("imageChange").src == "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"){
+            document.getElementById("imageChange").src ="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-football-sport-justicon-flat-justicon.png"
+        }else if(document.getElementById("imageChange").src == "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-football-sport-justicon-flat-justicon.png"){
+            document.getElementById("imageChange").src = "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-volleyball-sport-justicon-flat-justicon.png"
+        }else {
+            document.getElementById("imageChange").src = "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"
+        }
+    }
+
+    const bounceTransition = {
+        y:{
+            duration: 0.6,
+            yoyo: Infinity,
+            ease: "easeOut"
+        }
+    };
+    
     return(
         <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
         <div className='my-24 mx-8 md:mx-1'>
@@ -27,8 +47,11 @@ function Contact(){
                 
                 </div>
                 
-                <div className='md:w-1/2'>
-
+                <div className='md:w-1/2 grid content-center ml-8 ' >
+                    <motion.div className='w-16 m-auto'   transition={bounceTransition} animate={{y: ["100%", "-100%"]}} >
+                <img id='imageChange'  src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"/>
+                </motion.div>
+                
                 </div>
                 <div className='place-self-center block md:hidden' >
                 <div>
