@@ -2,29 +2,40 @@ import React from 'react';
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 
+const bounceTransition = {
+    y:{
+        duration: 0.6,
+        yoyo: Infinity,
+        ease: "easeOut"
+    }
+};
 
+class Contact extends React.Component {
+    constructor(){
+        super()
+        this.changeImage = this.changeImage.bind(this)
+    this.state = {
+        index: 0,
+        imgList: ["https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png","https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-football-sport-justicon-flat-justicon.png","https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-volleyball-sport-justicon-flat-justicon.png"]
+    }
+}
 
-function Contact(){
-
-    function changeImage(){
-        if(document.getElementById("imageChange").src == "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"){
-            document.getElementById("imageChange").src ="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-football-sport-justicon-flat-justicon.png"
-        }else if(document.getElementById("imageChange").src == "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-football-sport-justicon-flat-justicon.png"){
-            document.getElementById("imageChange").src = "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-volleyball-sport-justicon-flat-justicon.png"
+    changeImage(){
+        if(this.state.index + 1 == this.state.imgList.length){
+            this.setState({
+                index:0
+            })
         }else {
-            document.getElementById("imageChange").src = "https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"
+            this.setState({
+                index: this.state.index + 1
+            })
         }
     }
 
-    const bounceTransition = {
-        y:{
-            duration: 0.6,
-            yoyo: Infinity,
-            ease: "easeOut"
-        }
-    };
     
-    return(
+    
+    render() {
+        return(
         <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
         <div className='my-24 mx-8 md:mx-1'>
             <h1 className='playfair light:text-gray-800 text-4xl' >Say Hello !</h1><br>
@@ -47,11 +58,11 @@ function Contact(){
                 
                 </div>
                 
-                <div className='md:w-1/2 grid content-center ml-8 ' >
+                <div className='md:w-1/2 grid content-center md:ml-8 ' >
                     <motion.div className='w-16 m-auto'   transition={bounceTransition} animate={{y: ["100%", "-100%"]}} >
-                <img id='imageChange'  src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-basketball-sport-justicon-flat-justicon.png"/>
+                <img id='imageChange' onClick={this.changeImage} src={this.state.imgList[this.state.index]}/>
                 </motion.div>
-                
+                <p>Click the ball !</p>
                 </div>
                 <div className='place-self-center block md:hidden' >
                 <div>
@@ -73,6 +84,7 @@ function Contact(){
         </div>
         </motion.div>
     )
+        }
 }
 
 export default Contact;
