@@ -58,11 +58,11 @@ class Contact extends React.Component {
                 
                 </div>
                 
-                <div className='md:w-1/2 grid content-center md:ml-8 ' >
+                <div className='md:w-1/2 md:grid md:ml-8 hidden ' >
                     <motion.div className='w-16 m-auto'   transition={bounceTransition} animate={{y: ["100%", "-100%"]}} >
                 <img id='imageChange' onClick={this.changeImage} src={this.state.imgList[this.state.index]}/>
                 </motion.div>
-                <p>Click the ball !</p>
+                <p className=' mx-auto'>Click the ball !</p>
                 </div>
                 <div className='place-self-center block md:hidden' >
                 <div>
