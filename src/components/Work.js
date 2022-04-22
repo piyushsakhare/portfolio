@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import publicapp from '../images/publicapp.png'
 import firesys from '../images/firesys.jpg'
+import pokemon from '../images/pokemon.jpg'
+import pretiosa from '../images/pretiosa.jpg'
 import srf from '../images/srf.jpg'
 import {motion} from 'framer-motion'
 
@@ -31,6 +33,45 @@ function Work(){
             </div>
             </div>
 
+            <h1 className='playfair text-4xl light:text-gray-800 mt-6' >Pokemon Cards Value</h1>
+            <p>#React #tailwindCSS #RESTAPIs</p><br></br>
+            <div className='md:flex' >
+            <div className='md:w-2/3 md:pr-4'>
+            <p>A Web application on which users can search pokemon, get the stats and images related to it along with their valuable trading cards. A personal project because i was into Pokemon and trading cards price had skyrocketted</p>
+            <p>What I did :</p>
+            <ul className='list-disc ml-5'>
+            <li>Design the application and implement dark mode.</li>
+            <li>Use APIs to feteh data related to Pokemon and their cards.</li>
+            <li>Used PokeAPI and PokemonTCGAPI</li>
+            <li>Made it responsive and user friendly deployed on Netlify</li>
+            </ul>
+            <br></br>
+            <a href='https://pokecardsvalue.netlify.app/' target="_blank" className='bg-gray-800 p-1 text-white dark:bg-white dark:text-black dark:font-semibold' >Website</a>
+            </div>
+            <div className='md:w-1/3 '>
+            <img  src={pokemon} ></img>
+            </div>
+            </div>
+
+            <h1 className='playfair text-4xl light:text-gray-800 mt-6' >Pretiosa Viventium</h1>
+            <p>#React #tailwindCSS #MongoDB #epressJS #Nodejs</p><br></br>
+            <div className='md:flex' >
+            <div className='md:w-2/3 md:pr-4'>
+            <p>A Web application on which users can sigup or login and search for places to stay for their holidays. Made this Full stack Web application using MongoDB, expressJS, ReactJS and NodeJS (MERN). Users can create account, search for locations and book their stay.</p>
+            <p>What I did :</p>
+            <ul className='list-disc ml-5'>
+            <li>Create API using express and node with MongoDB Atlas for storage.</li>
+            <li>Used Firebase to store images.</li>
+            <li>Make it responsive and user friendly deployed on Netlify</li>
+            </ul>
+            <br></br>
+            <a href='https://pretiosaviventium.netlify.app/' target="_blank" className='bg-gray-800 p-1 text-white dark:bg-white dark:text-black dark:font-semibold' >Website</a>
+            </div>
+            <div className='md:w-1/3 '>
+            <img  src={pretiosa} ></img>
+            </div>
+            </div>
+
             <h1 className='playfair text-4xl light:text-gray-800 mt-6' >Public Complaint Registration App</h1>
             <p>#Java #Firebase #Android</p><br></br>
             <div className='md:flex' >
@@ -49,7 +90,6 @@ function Work(){
             <div className='md:w-1/3 '>
             <img  src={publicapp} ></img>
             </div>
-            
             </div>
 
             <h1 className='playfair text-4xl light:text-gray-800 mt-6' >Fire Detection System</h1>
