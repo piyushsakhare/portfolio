@@ -25,7 +25,7 @@ function Nav(){
                         contact
                     </NavLink>
 
-                    <a className="flex items-center mx-2 light:text-gray-800 hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-black p-2" href="https://drive.google.com/file/d/1pNwb8wDYxP-dtB_LnzUum23CDsXFC9Of/view?usp=sharing" target="_blank">
+                    <a className="flex items-center mx-2 light:text-gray-800 hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-black p-2" href="https://drive.google.com/file/d/1LjkNT0LvI7WccMXbh-EPbDelMd_nxCXl/view?usp=sharing" target="_blank">
                         resume
                     </a>
                 </div>

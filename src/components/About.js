@@ -38,7 +38,7 @@ function About(){
         </div>
     </div>
     <div className='mt-8 md:pl-16'>
-        #tailwindCSS #Bootstrap #Java #SQL/DBMS
+        #tailwindCSS #Bootstrap #C++ #SQL/DBMS
     </div>
     <Link to="/work" className='mt-8 dark:bg-white dark:text-black dark:font-semibold bg-gray-800 text-white p-2 float-right'>
         <h1>Work &#x21E8;</h1>

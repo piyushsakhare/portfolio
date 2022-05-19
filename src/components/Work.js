@@ -13,25 +13,6 @@ function Work(){
       <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
         <div className='my-24 mx-8 md:mx-1'>
             <h2>Projects / Education</h2>
-            <h1 className='playfair text-4xl light:text-gray-800 mt-6' >SR Foods</h1>
-            <p>#React #tailwind #UI/UX #Figma</p><br></br>
-            <div className='md:flex' >
-            <div className='md:w-2/3 md:pr-4'>
-            <p>SR Foods is a local business that mainly focuses on selling soy-based products rich in protein for consumers. This project was made to make the business go online and was built using React, tailwind CSS, and React libraries.</p>
-            <p>What I did :</p>
-            <ul className='list-disc ml-5'>
-            <li>In a team of three, planned and designed the website.</li>
-            <li>Built a responsive website using ReactJS and tailwind CSS.</li>
-            <li>Involved in designing the product with Figma and writing content for the page.</li>
-            <li>Helped in hosting the website online.</li>
-            </ul>
-            <br></br>
-            <a href='http://srfgoldenbeans.com/' target="_blank" className='bg-gray-800 p-1 text-white dark:bg-white dark:text-black dark:font-semibold' >Website</a>
-            </div>
-            <div className='md:w-1/3'>
-              <img src={srf} ></img>
-            </div>
-            </div>
 
             <h1 className='playfair text-4xl light:text-gray-800 mt-6' >Pokemon Cards Value</h1>
             <p>#React #tailwindCSS #RESTAPIs</p><br></br>
@@ -69,6 +50,26 @@ function Work(){
             </div>
             <div className='md:w-1/3 '>
             <img  src={pretiosa} ></img>
+            </div>
+            </div>
+
+            <h1 className='playfair text-4xl light:text-gray-800 mt-6' >SR Foods</h1>
+            <p>#React #tailwind #UI/UX #Figma</p><br></br>
+            <div className='md:flex' >
+            <div className='md:w-2/3 md:pr-4'>
+            <p>SR Foods is a local business that mainly focuses on selling soy-based products rich in protein for consumers. This project was made to make the business go online and was built using React, tailwind CSS, and React libraries.</p>
+            <p>What I did :</p>
+            <ul className='list-disc ml-5'>
+            <li>In a team of three, planned and designed the website.</li>
+            <li>Built a responsive website using ReactJS and tailwind CSS.</li>
+            <li>Involved in designing the product with Figma and writing content for the page.</li>
+            <li>Helped in hosting the website online.</li>
+            </ul>
+            <br></br>
+            <a href='http://srfgoldenbeans.com/' target="_blank" className='bg-gray-800 p-1 text-white dark:bg-white dark:text-black dark:font-semibold' >Website</a>
+            </div>
+            <div className='md:w-1/3'>
+              <img src={srf} ></img>
             </div>
             </div>
 
