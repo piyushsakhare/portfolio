@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import publicapp from '../images/publicapp.png'
 import firesys from '../images/firesys.jpg'
-import pokemon from '../images/pokemon.jpeg'
+import pokemon from '../images/pokegif.gif'
 import pretiosa from '../images/pretiosa.png'
 import srf from '../images/srf.jpg'
 import {motion} from 'framer-motion'
